@@ -46,7 +46,7 @@ const ParentComponent = () => {
                 LinkedIn
             </a>
             <a
-                href="https://wa.me/+1234567890" // Replace with your phone number
+                href="https://wa.me/+972509860437" // Replace with your phone number
                 target="_blank"
                 rel="noopener noreferrer"
                 className="whatsapp_button"

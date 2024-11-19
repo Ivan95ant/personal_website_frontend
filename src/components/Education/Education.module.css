@@ -17,6 +17,9 @@
     margin: 0;
     width: 100%;
     max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the list items horizontally */
     gap: 1rem; /* Spacing between education */
 }
 
@@ -30,7 +33,7 @@
     overflow: hidden; /* Ensure details don't overflow the container */
     transition: color 0.3s, background-color 0.3s, transform 0.2s;
     width: 90%; /* Decrease width to 90% of the parent container */
-    margin: 0 auto; /* Center horizontally */
+    max-width: 800px; /* Ensure it doesn't exceed the max width */
 }
 
 /* Hover effect for education items */
@@ -91,7 +94,13 @@
         margin: 0.25rem;
         font-size: 0.875rem;
     }
+    .educationName {
+        font-size: 1rem;
+    }
 
+    .educationDescription {
+        font-size: 0.875rem;
+    }
     .educationDetails {
         padding: 0.75rem;
     }
@@ -107,6 +116,15 @@
         margin: 0.25rem;
         font-size: 0.75rem;
     }
+
+    .educationName {
+        font-size: 0.875rem;
+    }
+
+    .educationDescription{
+        font-size: 0.75rem;
+    }
+
 
     .educationDetails {
         padding: 0.5rem;

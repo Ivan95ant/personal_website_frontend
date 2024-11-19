@@ -17,6 +17,9 @@
     margin: 0;
     width: 100%;
     max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the list items horizontally */
     gap: 1rem; /* Spacing between education */
 }
 
@@ -31,6 +34,7 @@
     transition: color 0.3s, background-color 0.3s, transform 0.2s;
     width: 90%; /* Decrease width to 90% of the parent container */
     margin: 0 auto; /* Center horizontally */
+    max-width: 800px; /* Ensure it doesn't exceed the max width */
 }
 
 /* Hover effect for project items */
@@ -46,6 +50,9 @@
     padding: 0.2rem;
     cursor: pointer; /* Make the header section clickable */
     transition: background-color 0.3s, transform 0.2s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Hover effect for the header */
@@ -74,7 +81,13 @@
     color: #ffffff; /* Same color as the text */
     text-align: left;
     border-top: 1px solid #555555; /* Subtle separation */
+    display: none; /* Hide details by default */
 }
+
+.projectDetails.show {
+    display: block; /* Show details when the class is added */
+}
+
 
 .projectDetails p {
     margin: 0.5rem 0; /* Add spacing between bullet points */
@@ -86,8 +99,9 @@
     }
 
     .projectItem {
-        width: 95%;
-    }
+        padding: 0.5rem;
+        margin: 0.25rem;
+        font-size: 0.875rem;    }
 
     .projectName {
         font-size: 1rem;
@@ -108,7 +122,9 @@
     }
 
     .projectItem {
-        width: 100%;
+        padding: 0.25rem;
+        margin: 0.25rem;
+        font-size: 0.75rem;
     }
 
     .projectName {

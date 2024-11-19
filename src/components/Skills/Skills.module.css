@@ -109,14 +109,24 @@
         padding: 1rem;
     }
 
+    .skillsList {
+        display: grid; /* Use CSS Grid */
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 0.5rem; /* Adjust gap between items */
+        width: 100%; /* Ensure it takes the full width of the container */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+
     .skillItem {
         padding: 0.25rem;
         margin: 0.25rem;
         font-size: 0.75rem;
+        text-align: center;
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
     }
 
     .modal {
-        width: 100%;
+        width: 90%;
         padding: 10px;
     }
 

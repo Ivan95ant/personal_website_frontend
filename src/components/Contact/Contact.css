@@ -1,86 +1,109 @@
-/* Contact.css */
+/* Global Box-Sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
-/* Center and style the contact section */
-#contact {
-    text-align: center;
-    margin: 10px auto;
-    max-width: 1000px;
-    padding: 10px;
+/* Modal Content Styling */
+.ReactModal__Content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%; /* Default width */
+    max-width: 400px; /* Maximum width for larger screens */
+    padding: 15px;
     background-color: #f9f9f9;
     border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
-/* Heading style */
+/* Media Query for Tablets and Smaller Screens */
+@media (max-width: 768px) {
+    .ReactModal__Content {
+        width: 95%; /* Expand to fit most of the screen */
+        max-width: none; /* Remove max-width limit */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 480px) {
+    .ReactModal__Content {
+        width: 95%; /* Take up most of the viewport */
+        padding: 8px; /* Adjust padding further for small devices */
+    }
+}
+
+/* Contact Form Styling */
+#contact {
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 100%; /* Ensure it fits within the modal */
+    text-align: center; /* Center align content */
+}
+
 #contact h2 {
     font-size: 1.8rem;
-    color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-/* Form styling */
 #contact form {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-/* Row styling for the first row */
+/* Row styling for labels and inputs */
 .contact-row {
     display: flex;
-    justify-content: space-between;
-    gap: 50px; /* Space between fields in the row */
-    width: 100%;
+    flex-wrap: wrap;
+    gap: 15px;
 }
 
-/* Flex basis for first row inputs */
 .contact-row label {
-    flex: 1; /* Ensure each field takes equal space */
-    min-width: 0; /* Prevent overflow */
+    flex: 1 1 calc(33.333% - 10px); /* Default to three columns */
+    min-width: 100px; /* Prevent columns from getting too small */
 }
 
-/* Label styling */
+/* Adjust the layout for tablets */
+@media (max-width: 768px) {
+    .contact-row {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .contact-row label {
+        flex: 1 1 100%; /* Each label takes full width */
+    }
+}
+
+/* Label Styling */
 #contact label {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
     font-size: 1rem;
-    color: #555;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 10px; /* Add space between each label and input */
 }
 
-/* Input and textarea styling */
-#contact input[type="text"],
-#contact input[type="email"],
-#contact input[type="tel"],
+/* Input and Textarea Styling */
+#contact input,
 #contact textarea {
     width: 100%;
     padding: 10px;
-    font-size: 1rem;
     border: 2px solid #007bff;
     border-radius: 8px;
-    outline: none;
-    transition: border-color 0.3s;
+    font-size: 1rem;
 }
 
-/* Focus effect for inputs and textarea */
-#contact input[type="text"]:focus,
-#contact input[type="email"]:focus,
-#contact input[type="tel"]:focus,
-#contact textarea:focus {
-    border-color: #0056b3;
-    box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
-}
-
-/* Textarea specific styling */
 #contact textarea {
-    resize: vertical;
+    resize: vertical; /* Allow vertical resizing */
     min-height: 100px;
 }
 
-/* Button styling */
+/* Button Styling */
 #contact button[type="submit"] {
-    padding: 10px 20px;
+    width: 100%;
+    padding: 10px;
     font-size: 1rem;
     font-weight: bold;
     color: #ffffff;
@@ -100,49 +123,21 @@
     background-color: #004494;
     transform: translateY(0);
 }
-/* Media queries for smaller screens */
-@media (max-width: 768px) {
-    .contact-row {
-        flex-direction: column;
-        gap: 15px;
-    }
 
+/* Responsive Adjustments for Smaller Devices */
+@media (max-width: 480px) {
     #contact h2 {
         font-size: 1.5rem;
     }
 
-    #contact input[type="text"],
-    #contact input[type="email"],
-    #contact input[type="tel"],
+    #contact input,
     #contact textarea {
         font-size: 0.875rem;
-    }
-
-    #contact button[type="submit"] {
-        padding: 8px 16px;
-        font-size: 0.875rem;
-    }
-}
-
-@media (max-width: 480px) {
-    #contact {
-        padding: 5px;
-    }
-
-    #contact h2 {
-        font-size: 1.2rem;
-    }
-
-    #contact input[type="text"],
-    #contact input[type="email"],
-    #contact input[type="tel"],
-    #contact textarea {
-        font-size: 0.75rem;
         padding: 8px;
     }
 
     #contact button[type="submit"] {
-        padding: 6px 12px;
-        font-size: 0.75rem;
+        padding: 8px;
+        font-size: 0.875rem;
     }
 }

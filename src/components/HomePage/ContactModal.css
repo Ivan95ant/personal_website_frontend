@@ -4,14 +4,18 @@
     flex-direction: column;
     gap: 15px; /* Spacing between form fields */
     width: 100%;
+    max-width: 100%; /* Ensure the form doesn't exceed the viewport width */
+    padding: 0 15px; /* Add padding to prevent touching the screen edges */
+    box-sizing: border-box; /* Include padding in the element's total width */
     align-items: center; /* Center align for form elements */
 }
 
 .modal-form h2 {
-    text-align: center;
+    text-align: center; /* Center-align the heading */
     font-size: 1.8rem;
     color: #333;
     margin-bottom: 20px;
+    width: 100%; /* Ensure it takes full width */
 }
 
 /* Input and textarea styling within the modal */
@@ -20,7 +24,7 @@
 .modal-form input[type="tel"],
 .modal-form textarea {
     width: 100%;
-    max-width: 400px; /* Consistent max-width with distance textbox */
+    max-width: 500px; /* Consistent max-width with distance textbox */
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     color: #333; /* Dark text color */
@@ -85,6 +89,7 @@
     margin: 10px 0;
     text-align: center;
 }
+
 /* Media queries for smaller screens */
 @media (max-width: 768px) {
     .modal-form h2 {
@@ -95,7 +100,7 @@
     .modal-form input[type="email"],
     .modal-form input[type="tel"],
     .modal-form textarea {
-        max-width: 100%;
+        max-width: 90%;
         padding: 0.5rem 1rem;
         font-size: 0.875rem;
     }
@@ -108,13 +113,14 @@
 
 @media (max-width: 480px) {
     .modal-form h2 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .modal-form input[type="text"],
     .modal-form input[type="email"],
     .modal-form input[type="tel"],
     .modal-form textarea {
+        max-width: 90%;
         padding: 0.5rem;
         font-size: 0.75rem;
     }
@@ -122,5 +128,39 @@
     .modal-form button[type="submit"] {
         padding: 6px 12px;
         font-size: 0.75rem;
+    }
+}
+
+.ReactModal__Content {
+    max-width: 90%; /* Use a percentage that adapts to the screen size */
+    margin: 0 auto; /* Center horizontally */
+    padding: 15px; /* Adjust padding */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    overflow: auto; /* Allow content to scroll if needed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+}
+
+@media (max-width: 768px) {
+    .ReactModal__Content {
+        max-width: 75%;
+        max-height: 50%;
+        padding: 15px; /* Ensure padding from the sides */
+    }
+}
+
+@media (max-width: 480px) {
+    .ReactModal__Content {
+        max-width: 75%; /* Allow the modal to fill most of the screen width */
+        max-height: 50%;
+        padding: 15px; /* Add some side padding for mobile screens */
     }
 }

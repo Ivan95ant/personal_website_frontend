@@ -40,13 +40,12 @@ const Projects = () => {
             </div>
 
             {/* Non-clickable section for additional details */}
-            {activeIndex === index && (
-              <div className={styles.projectDetails}>
+            <div className={`${styles.projectDetails} ${activeIndex === index ? styles.show : ''}`}>
                 {project.details.split("\n").map((line, i) => (
                   <p key={i}>&bull; {line}</p>
                 ))}
               </div>
-            )}
+       
           </li>
         ))}
       </ul>

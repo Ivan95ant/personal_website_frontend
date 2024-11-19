@@ -7,7 +7,6 @@
     box-sizing: border-box; /* Include padding in width */
 }
 
-
 .slider-container {
     margin-bottom: 20px;
 }
@@ -35,6 +34,14 @@
     transition: transform 0.3s, background-color 0.3s;
 }
 
+.slider-item p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Make the <p> element take the full height of the .slider-item */
+    margin: 0; /* Remove default margin */
+}
+
 .slider-item:hover {
     transform: scale(1.05);
     background-color: #007bff;
@@ -49,6 +56,7 @@
     color: #ffbb00;
     opacity: 1;
 }
+
 .slick-dots {
     display: flex;
     justify-content: center;
@@ -99,6 +107,7 @@
 .slick-next {
     right: 10px;
 }
+
 /* Media queries for smaller screens */
 @media (max-width: 768px) {
     .cv-container {
@@ -108,15 +117,14 @@
 
     .slider-item {
         height: 80px;
-        padding: 15px;
+        padding: 10px;
         font-size: 1.2rem;
     }
 
     .slick-prev,
     .slick-next {
-        width: 30px;
-        height: 30px;
-        font-size: 16px;
+        display: none !important; /* Hide arrows on phone screens */
+
     }
 }
 
@@ -127,15 +135,13 @@
     }
 
     .slider-item {
-        height: 60px;
-        padding: 10px;
+        height: 90px;
+        padding: 5px;
         font-size: 1rem;
     }
 
     .slick-prev,
     .slick-next {
-        width: 25px;
-        height: 25px;
-        font-size: 14px;
+        display: none !important; /* Hide arrows on phone screens */
     }
 }
