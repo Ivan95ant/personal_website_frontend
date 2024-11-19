@@ -10,7 +10,7 @@ const Projects = () => {
       description:
         "Single Page Aplication using MERN technologies (MongoDB, Express, React, NodeJS)",
       details:
-        "My Website, was created to practices the learned material + demonstrate my abilities. \n React: Frontend. \n NodeJS + Express: Backend. \n MongoDB: Database ('Contact' feature)\n Google maps API: 'Calculate Distance' feature. \n Modal-React: Pop-up windows (Welcome/About/Expirience/Skills)"
+        "This Website was created to practices learned material + demonstrate my skillset. \n React: Frontend. \n NodeJS + Express: Backend. \n MongoDB: Database ('Contact' feature)\n Google maps API: 'Calculate Distance' feature. \n Modal-React: Pop-up windows (Welcome/About/Expirience/Skills)\n Heroku: Backend deployment. \n Firebase: Frontend deployment.",
     },
     {
       name: "Project X",

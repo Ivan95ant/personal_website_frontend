@@ -20,7 +20,8 @@ const Skills = () => {
         'MongoDB - database',
         'PostMan - backend debug tool',
         'Implemantation of exteranl API (Google API..)',
-        'GCS for backend server',
+        'Heroku - backend deployment',
+        'Firebase - frontend deployment',
         'Build SPA from scratch E2E'
     ]
     },
@@ -39,8 +40,8 @@ const Skills = () => {
       description: [
         'Co-Pilot ',
         'Chat GPT',
-        'Efficantly structuring an instruction that can be interpreted and understood by a generative AI model',
-        'Integrate the output of the model into an existing codebase'    ]
+        'Efficantly structuring instructions for AI models',
+        'Integrate model output into an existing codebase'    ]
     },
     {
       name: "Data-serialization formats",

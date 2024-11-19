@@ -32,7 +32,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: color 0.3s, background-color 0.3s, transform 0.2s;
-    text-align: left; /* Align content inside the button to the left */
+    text-align: left ; /* Align content inside the button to the left */
 
 }
 
@@ -53,9 +53,31 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: auto; /* Adjust width dynamically based on content */
-    max-width: none; /* Remove maximum width constraint */
-    white-space: normal; /* Ensure text does not wrap */
-    overflow-x: auto;
+    max-width: 90%; /* Ensure it doesn't exceed viewport width */
+    white-space: normal; /* Ensure text wraps normally */
+    overflow-x: auto; /* Allow horizontal scrolling if needed */
+    text-align: left; /* Force all text to align to the left */
+}
+
+.modal h3 {
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 10px;
+}
+
+.modal ul {
+    list-style-type: disc; /* Use a consistent bullet style */
+    margin-left: 20px; /* Indent the list for readability */
+    padding: 0;
+    text-align: left; /* Ensure list items are aligned to the left */
+}
+
+.modal ul li {
+    margin-bottom: 5px; /* Add spacing between list items */
+}
+
+.modal p {
+    text-align: left; /* Ensure paragraphs are aligned to the left */
+    margin: 0;
 }
 
 .overlay {

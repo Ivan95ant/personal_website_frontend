@@ -20,27 +20,34 @@
 
 .slider-item {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
     height: 100px;
-    padding: 0.7rem 2%;
+    width: 90%; /* Adjust width to make it less wide */
+    padding: 0.7rem 2%; /* Ensure proper spacing inside */
     background: #000000;
-    border-radius: 12px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
     color: #ffffff;
     font-size: 1.5rem;
     font-weight: regular;
     text-align: center;
     transition: transform 0.3s, background-color 0.3s;
+    margin: 0 auto; /* Center the slider item horizontally within its container */
+    box-sizing: border-box; /* Include padding and borders in the total width */
 }
 
 .slider-item p {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; /* Centers the text horizontally inside the <p> */
+    align-items: center; /* Centers the text vertically inside the <p> */
     height: 100%; /* Make the <p> element take the full height of the .slider-item */
-    margin: 0; /* Remove default margin */
+    width: 100%; /* Set the <p> width to 100% to ensure it fills the parent container */
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any extra padding */
+    text-align: center; /* Center the text inside the <p> */
+    box-sizing: border-box; /* Include padding in the element's width */
 }
+
 
 .slider-item:hover {
     transform: scale(1.05);
@@ -121,6 +128,10 @@
         font-size: 1.2rem;
     }
 
+    .slider-item p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
     .slick-prev,
     .slick-next {
         display: none !important; /* Hide arrows on phone screens */
@@ -139,6 +150,11 @@
         padding: 5px;
         font-size: 1rem;
     }
+
+    .slider-item p {
+        font-size: 0.875rem; /* Further reduce font size on very small screens */
+    }
+
 
     .slick-prev,
     .slick-next {

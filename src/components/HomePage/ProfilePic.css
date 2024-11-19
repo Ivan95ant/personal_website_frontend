@@ -72,12 +72,12 @@
 }
 @media (max-width: 480px) {
     .profile-image-wrapper {
-        width: 220px;
-        height: 330px;
+        width: 240px;
+        height: 360px;
     }
 
     .profile-image {
-        width: 220px;
-        height: 330px;
+        width: 240px;
+        height: 360px;
     }
 }

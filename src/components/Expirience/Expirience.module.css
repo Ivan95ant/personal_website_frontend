@@ -70,10 +70,14 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: auto; /* Adjust width dynamically based on content */
-    max-width: none; /* Remove maximum width constraint */
-    white-space: normal; /* Ensure text does not wrap */
-    overflow-x: auto;
+    max-width: 90%; /* Limit max width */
+    height: auto; /* Allow content to determine height */
+    max-height: 90%; /* Ensure it fits within the viewport height */
+    white-space: normal; /* Ensure text wraps normally */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    overflow-x: hidden; /* Disable horizontal scrolling */
 }
+
 
 .overlay {
     background-color: rgba(0, 0, 0, 0.75);
@@ -110,7 +114,8 @@
     }
 
     .modal {
-        width: 90%;
+        width: 95%;
+        max-height: 90%; /* Ensure it fits within the viewport */
         padding: 15px;
     }
 
@@ -140,9 +145,11 @@
     }
 
     .modal {
-        width: 90%;
-        padding: 10px;
+        width: 100%;
+        max-height: 85%; /* Slightly reduce for very small screens */
+        padding: 5px;
     }
+
 
     .closeButton {
         padding: 6px 12px;

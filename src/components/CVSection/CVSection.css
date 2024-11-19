@@ -134,7 +134,7 @@
     }
 
     .cv-section .pdf-viewer {
-        max-width: 100%;
+        max-width: 85%;
         max-height: 100%;
         width: 100%;
         height: calc(100vw * 1.05);
