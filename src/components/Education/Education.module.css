@@ -1,0 +1,114 @@
+/* Education section container */
+.educationSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(45deg, #ffbb00, #444444); /* Gradient background */
+    color: #000000; /* Text color */
+    text-align: center; /* Center text alignment */
+}
+
+/* Education list styling */
+.educationList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 800px;
+    gap: 1rem; /* Spacing between education */
+}
+
+/* Individual education items */
+.educationItem {
+    margin: 1rem 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: transparent; /* Match the background style */
+    cursor: pointer;
+    overflow: hidden; /* Ensure details don't overflow the container */
+    transition: color 0.3s, background-color 0.3s, transform 0.2s;
+    width: 90%; /* Decrease width to 90% of the parent container */
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Hover effect for education items */
+.educationItem:hover {
+    color: #ffffff;
+    background-color: #007bff; /* Highlight on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    border: 1px solid #007bff;
+}
+
+/* Education header */
+.educationHeader {
+    padding: 0.2rem;
+    cursor: pointer; /* Make the header section clickable */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect for the header */
+.educationHeader:hover {
+    background-color: #007bff; /* Slightly darker on hover */
+}
+
+/* Education name styling */
+.educationName {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+/* Education description styling */
+.educationDescription {
+    font-size: 1rem;
+    color: #cccccc; /* Lighter color for description */
+    font-weight: normal; /* Explicitly set to normal */
+
+}
+
+/* Non-clickable details section */
+.educationDetails {
+    padding: 1rem;
+    background-color: #222222; /* Slightly darker background for details */
+    color: #ffffff; /* Same color as the text */
+    text-align: left;
+    border-top: 1px solid #555555; /* Subtle separation */
+}
+
+.educationDetails p {
+    margin: 0.5rem 0; /* Add spacing between bullet points */
+}
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    .educationSection {
+        padding: 1.5rem;
+    }
+
+    .educationItem {
+        padding: 0.5rem;
+        margin: 0.25rem;
+        font-size: 0.875rem;
+    }
+
+    .educationDetails {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .educationSection {
+        padding: 1rem;
+    }
+
+    .educationItem {
+        padding: 0.25rem;
+        margin: 0.25rem;
+        font-size: 0.75rem;
+    }
+
+    .educationDetails {
+        padding: 0.5rem;
+    }
+}

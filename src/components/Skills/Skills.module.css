@@ -1,0 +1,127 @@
+/* Skills.module.css */
+
+.skillsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center;
+    padding: 2rem;
+    background-color: #000000; /* Match the header background */
+    color: #ffffff; /* Text color */
+    text-align: center; /* Center text alignment */
+}
+
+.skillsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: center; /* Center the skills list */
+    gap: 1rem; /* Spacing between skills */
+}
+
+.skillItem {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid #ffffff; /* Add a border */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s, transform 0.2s;
+    text-align: left; /* Align content inside the button to the left */
+
+}
+
+.skillItem:hover {
+    color: #ffffff;
+    background-color: #007bff; /* Highlight on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    border: 1px solid #007bff;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: auto; /* Adjust width dynamically based on content */
+    max-width: none; /* Remove maximum width constraint */
+    white-space: normal; /* Ensure text does not wrap */
+    overflow-x: auto;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.closeButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.closeButton:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    .skillsSection {
+        padding: 1.5rem;
+    }
+
+    .skillItem {
+        padding: 0.5rem;
+        margin: 0.25rem;
+        font-size: 0.875rem;
+    }
+
+    .modal {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .closeButton {
+        padding: 8px 16px;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skillsSection {
+        padding: 1rem;
+    }
+
+    .skillItem {
+        padding: 0.25rem;
+        margin: 0.25rem;
+        font-size: 0.75rem;
+    }
+
+    .modal {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .closeButton {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+}

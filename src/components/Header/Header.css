@@ -1,0 +1,129 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Ensure vertical alignment for content */
+    padding: 1rem 2%; /* Dynamic padding: adjusts with screen width */
+    background-color: #000000;
+    color: #fff;
+    font-size: 1rem; /* Base font size for the header */
+}
+
+nav a {
+    margin: 0 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem; /* Font size for navigation links */
+}
+.about-modal {
+    position: absolute;
+    top: 10%; /* Move the modal closer to the top of the page */
+    left: 50%;
+    transform: translate(-50%, 0); /* Center horizontally */
+    width: auto; /* Automatically adjust width based on content */
+    max-width: 80%; /* Restrict width to a percentage of the viewport */
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Center-align content */
+    z-index: 1000; /* Ensure the modal appears above other elements */
+    word-wrap: break-word; /* Break long words to prevent overflow */
+}
+
+.about-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px); /* Apply a blur effect to the background */
+    position: fixed; /* Cover the entire screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999; /* Place it behind the modal but above other content */
+}
+
+.about-modal h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-modal p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+    word-wrap: break-word; /* Break long words */
+}
+
+.about-modal button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.about-modal button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center-align text */
+        padding: 0.5rem 1%; /* Reduce padding */
+    }
+
+    nav a {
+        display: block; /* Stack links vertically */
+        margin: 0.5rem 0; /* Add vertical spacing */
+    }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 480px) {
+    header {
+        font-size: 0.9rem; /* Slightly smaller font size */
+    }
+
+    nav a {
+        font-size: 0.9rem; /* Reduce link font size for smaller screens */
+    }
+}
+
+/* Additional adjustments for extra small screens */
+@media (max-width: 320px) {
+    header {
+        font-size: 0.8rem; /* Even smaller font size */
+        padding: 0.25rem 0.5%; /* Further reduce padding */
+    }
+
+    nav a {
+        font-size: 0.8rem; /* Further reduce link font size */
+        margin: 0.25rem 0; /* Reduce vertical spacing */
+    }
+
+    .about-modal {
+        padding: 10px; /* Reduce padding */
+        font-size: 0.875rem; /* Reduce font size */
+    }
+
+    .about-modal h2 {
+        font-size: 1.5rem; /* Reduce heading size */
+    }
+
+    .about-modal p {
+        font-size: 0.875rem; /* Reduce paragraph font size */
+    }
+
+    .about-modal button {
+        padding: 8px 16px; /* Reduce button padding */
+        font-size: 0.875rem; /* Reduce button font size */
+    }
+}

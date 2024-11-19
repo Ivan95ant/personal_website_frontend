@@ -1,0 +1,226 @@
+.home-page .summary {
+    text-align: center;
+    background: transparent;
+    color: #f9f9f9; /* Orange text for contrast */
+    padding: 20px; /* Padding for spacing */
+    width: 100%; /* Full width */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+}
+
+/* Attention animation */
+@keyframes attention {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.home-page .summary:hover,
+.distance_to_office:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.7); /* Enhance shadow */
+    animation: shake 0s ease-in-out; /* Shake effect on hover */
+
+}
+
+/* Input field */
+.destination-input {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    color: #333;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 1px;
+}
+
+.destination-input:hover {
+    border-color: #007bff;
+}
+
+.destination-input:focus {
+    border-color: #0056b3;
+    box-shadow: 0px 0px 5px rgba(0, 86, 179, 0.5);
+}
+
+
+/* Full-width background wrapper for DistanceToOffice section */
+.distance-to-office-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    background: linear-gradient(45deg, #ffbb00, #444444); /* Gradient background */
+    color: #fff;
+}
+
+/* Centered content box with shadow */
+.distance_to_office {
+    background-color: #f9f9f9; /* Light background */
+    color: #333; /* Darker text */
+    width: 100%;
+    max-width: 800px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Subtle shadow */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center-align the elements */
+    justify-content: center;
+    display: flex;
+    animation: attention 1.5s ease-in-out infinite; /* Pulsating effect */
+
+
+}
+.distance_to_office p {
+    margin: 10px 0; /* Space between text */
+}
+
+.distance-duration-container {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.distance-duration-container p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+.distance-duration-container p span {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Suggestions list */
+.suggestions-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 400px;
+    margin: 10px auto;
+    background-color: white;
+    overflow-y: auto;
+    max-height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.suggestion-item {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+.distance-icon {
+    width: 40px; /* Adjust icon size */
+    height: 40px; /* Adjust icon size */
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .cv-buttons {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .destination-input {
+        max-width: 100%;
+    }
+
+    .home-page .summary,
+    .distance_to_office {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-page .summary {
+        padding: 10px;
+        font-size: 0.875rem;
+    }
+
+    .distance-to-office-wrapper {
+        padding: 1rem;
+    }
+
+    .distance_to_office {
+        padding: 0.5rem;
+    }
+
+    .destination-input {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    .suggestions-list {
+        max-width: 100%;
+        margin: 5px auto;
+    }
+
+    .suggestion-item {
+        padding: 5px;
+    }
+}
+
+.cv-button {
+    display: inline-flex; /* Align text and icon side-by-side */
+    align-items: center; /* Center icon and text vertically */
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    background-color: #f9f9f9;
+    border: 1px solid #f9f9f9;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    margin: 0 10px; /* Add space between buttons */
+}
+
+.cv-button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.cv-button:focus {
+    background-color: #0056b3; /* Darker blue on focus */
+    color: #ffffff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 68, 148, 0.5); /* Optional focus shadow */
+}
+
+.cv-button:active {
+    background-color: #004494;
+    transform: scale(0.95);
+}
+
+

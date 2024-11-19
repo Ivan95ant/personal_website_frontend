@@ -1,0 +1,125 @@
+/* Projects section container */
+.projectsSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(45deg, #ffbb00, #444444); /* Gradient background */
+    color: #000000; /* Text color */
+    text-align: center; /* Center text alignment */
+}
+
+/* Projects list styling */
+.projectsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 800px;
+    gap: 1rem; /* Spacing between education */
+}
+
+/* Individual project items */
+.projectItem {
+    margin: 1rem 0;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    background-color: transparent; /* Match the background style */
+    cursor: pointer;
+    overflow: hidden; /* Ensure details don't overflow the container */
+    transition: color 0.3s, background-color 0.3s, transform 0.2s;
+    width: 90%; /* Decrease width to 90% of the parent container */
+    margin: 0 auto; /* Center horizontally */
+}
+
+/* Hover effect for project items */
+.projectItem:hover {
+    color: #ffffff;
+    background-color: #007bff; /* Highlight on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    border: 1px solid #007bff;
+}
+
+/* Education header */
+.projectHeader {
+    padding: 0.2rem;
+    cursor: pointer; /* Make the header section clickable */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect for the header */
+.projectHeader:hover {
+    background-color: #007bff; /* Slightly darker on hover */
+}
+
+/* Project name styling */
+.projectName {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+/* Project description styling */
+.projectDescription {
+    font-size: 1rem;
+    color: #cccccc; /* Lighter color for description */
+    font-weight: normal; /* Explicitly set to normal */
+
+}
+/* Non-clickable details section */
+.projectDetails {
+    padding: 1rem;
+    background-color: #222222; /* Slightly darker background for details */
+    color: #ffffff; /* Same color as the text */
+    text-align: left;
+    border-top: 1px solid #555555; /* Subtle separation */
+}
+
+.projectDetails p {
+    margin: 0.5rem 0; /* Add spacing between bullet points */
+}
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    .projectsSection {
+        padding: 1.5rem;
+    }
+
+    .projectItem {
+        width: 95%;
+    }
+
+    .projectName {
+        font-size: 1rem;
+    }
+
+    .projectDescription {
+        font-size: 0.875rem;
+    }
+
+    .projectDetails {
+        padding: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projectsSection {
+        padding: 1rem;
+    }
+
+    .projectItem {
+        width: 100%;
+    }
+
+    .projectName {
+        font-size: 0.875rem;
+    }
+
+    .projectDescription {
+        font-size: 0.75rem;
+    }
+
+    .projectDetails {
+        padding: 0.5rem;
+    }
+}

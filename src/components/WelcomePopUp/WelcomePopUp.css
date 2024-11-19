@@ -1,0 +1,76 @@
+.welcome-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: auto; /* Adjust width dynamically based on content */
+    max-width: none; /* Remove maximum width constraint */
+    white-space: normal; /* Ensure text does not wrap */
+    overflow-x: auto;
+}
+
+.welcome-overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(8px); /* Apply a blur effect to the background */
+    position: fixed; /* Cover the entire screen */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999; /* Place it behind the modal but above other content */
+}
+
+.welcome-modal h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+
+.welcome-modal p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: center;
+}
+
+.welcome-modal button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.welcome-modal button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+/* Media queries for smaller screens */
+@media (max-width: 600px) {
+    .welcome-modal {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .welcome-modal h2 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-modal p {
+        font-size: 0.875rem;
+    }
+
+    .welcome-modal button {
+        padding: 8px 16px;
+        font-size: 0.875rem;
+    }
+}

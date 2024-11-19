@@ -1,0 +1,148 @@
+/* Contact.css */
+
+/* Center and style the contact section */
+#contact {
+    text-align: center;
+    margin: 10px auto;
+    max-width: 1000px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style */
+#contact h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Row styling for the first row */
+.contact-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px; /* Space between fields in the row */
+    width: 100%;
+}
+
+/* Flex basis for first row inputs */
+.contact-row label {
+    flex: 1; /* Ensure each field takes equal space */
+    min-width: 0; /* Prevent overflow */
+}
+
+/* Label styling */
+#contact label {
+    font-size: 1rem;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px; /* Add space between each label and input */
+}
+
+/* Input and textarea styling */
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Focus effect for inputs and textarea */
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact input[type="tel"]:focus,
+#contact textarea:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 91, 187, 0.5);
+}
+
+/* Textarea specific styling */
+#contact textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button styling */
+#contact button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#contact button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#contact button[type="submit"]:focus {
+    background-color: #004494;
+    transform: translateY(0);
+}
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    .contact-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #contact h2 {
+        font-size: 1.5rem;
+    }
+
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="tel"],
+    #contact textarea {
+        font-size: 0.875rem;
+    }
+
+    #contact button[type="submit"] {
+        padding: 8px 16px;
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact {
+        padding: 5px;
+    }
+
+    #contact h2 {
+        font-size: 1.2rem;
+    }
+
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="tel"],
+    #contact textarea {
+        font-size: 0.75rem;
+        padding: 8px;
+    }
+
+    #contact button[type="submit"] {
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+}

@@ -1,0 +1,98 @@
+/* ParentComponent.css */
+.ParentComponent {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+/* Styling for buttons and links */
+.contact_us,
+.email_me,
+.linkedin_button,
+.whatsapp_button {
+    display: inline-flex; /* Align text and icon side-by-side */
+    align-items: center; /* Center icon and text vertically */
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    margin: 0 10px; /* Add space between buttons */
+}
+
+/* Button hover effect */
+.contact_us:hover,
+.email_me:hover,
+.linkedin_button:hover,
+.whatsapp_button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+
+.contact_us:focus,
+.email_me:focus,
+.linkedin_button:focus,
+.whatsapp_button:focus {
+    background-color: #0056b3; /* Darker blue on focus */
+    color: #ffffff;
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(0, 68, 148, 0.5); /* Optional focus shadow */
+}
+
+/* Icon styling */
+.button-icon {
+    width: 40px; /* Adjust icon size */
+    height: 40px; /* Adjust icon size */
+    margin-right: 10px; /* Space between icon and text */
+}
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    .ParentComponent {
+        font-size: 1.5rem;
+    }
+
+    .contact_us,
+    .email_me,
+    .linkedin_button,
+    .whatsapp_button {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        margin: 0 5px;
+    }
+
+    .button-icon {
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ParentComponent {
+        font-size: 1.2rem;
+    }
+
+    .contact_us,
+    .email_me,
+    .linkedin_button,
+    .whatsapp_button {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+        margin: 0 2px;
+    }
+
+    .button-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 2px;
+    }
+}
