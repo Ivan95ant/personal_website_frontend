@@ -69,14 +69,16 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: auto; /* Adjust width dynamically based on content */
-    max-width: 90%; /* Limit max width */
+    width: fit-content; /* Adjust width to fit the content */
+    max-width: 90%; /* Limit max width to 90% of the viewport */
+    min-width: fit-content; /* Ensure minimum width fits the content */
     height: auto; /* Allow content to determine height */
     max-height: 90%; /* Ensure it fits within the viewport height */
-    white-space: normal; /* Ensure text wraps normally */
+    white-space: nowrap; /* Prevent text from wrapping */
     overflow-y: auto; /* Allow vertical scrolling if content overflows */
     overflow-x: hidden; /* Disable horizontal scrolling */
 }
+
 
 
 .overlay {
@@ -101,6 +103,17 @@
 .closeButton:hover {
     background-color: #0056b3;
 }
+
+@media (max-width: 1024px) {
+    .modal {
+        width: 95%; /* Slightly smaller max-width */
+        max-height: 85%; /* Slightly smaller max-height */
+        padding: 15px; /* Adjust padding */
+        white-space: normal; /* Allow text wrapping on smaller screens */
+
+    }
+}
+
 /* Media queries for smaller screens */
 @media (max-width: 768px) {
     .expirienceSection {
@@ -117,6 +130,8 @@
         width: 95%;
         max-height: 90%; /* Ensure it fits within the viewport */
         padding: 15px;
+        white-space: normal; /* Allow text wrapping on smaller screens */
+
     }
 
     .closeButton {
@@ -145,14 +160,21 @@
     }
 
     .modal {
-        width: 100%;
+        width: 95%;
         max-height: 85%; /* Slightly reduce for very small screens */
         padding: 5px;
+        overflow-y: auto; /* Ensure scrollability for overflowing content */
     }
 
 
     .closeButton {
         padding: 6px 12px;
         font-size: 0.75rem;
+    }
+    .ul{
+        list-style-type: disc; /* Use a consistent bullet style */
+        margin-left: 20px; /* Indent the list for readability */
+        padding: 0;
+        text-align: left; /* Ensure list items are aligned to the left */
     }
 }
