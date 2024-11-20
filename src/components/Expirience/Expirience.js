@@ -16,10 +16,10 @@ const Expirience = () => {
             description: [
                 'Lead software validation & verification activities, ensuring 100% system integration coverage, improving nightly build testing success rate.',
                 'Develop automation for regression using Python - improving testing/reporting time and increasing CI/CD reliability.',
-                'Analyze results, debugging asserts/exceptions, document steps to reproduce bugs (JIRA).',
+                'Analyze results, debug asserts/exceptions, and document steps to reproduce bugs in JIRA.',
                 'Review, troubleshoot and resolve issues in existing code (C#).',
                 'Lead a remote international team of 4 engineers (Taiwan), overseeing daily tasks and coordination.',
-                'Lab activities, including building and debugging RF setups, maintain and develop testing flows.',
+                'Lab activities, including building and debugging RF setups, maintaining and developing testing flows.',
                 'Collaborate with cross-functional teams throughout the entire process, from requirements definition to E2E execution.'
             ]
         },
@@ -28,8 +28,8 @@ const Expirience = () => {
             role: 'Lab Operator',
             years: '2019-2021',
             description: [
-                'Operating CPU final tests, build and monitor various setups, HW&SW support for engineers, providing solutions for equipment failures.',
-                'Executing validation tests, reviewing results reporting and documenting every step and technical issues.'
+                'Operating CPU final tests, building and monitoring various setups, providing HW&SW support for engineers, and offering solutions for equipment failures.',
+                'Executing validation tests, reviewing and reporting results, and documenting every step and technical issues.'
             ]
         },
         {
@@ -38,7 +38,7 @@ const Expirience = () => {
             years: '2018-2019',
             description: [
                 'Project support during all stages of the units development.',
-                'Testing prototype units, performing final tests, troubleshooting and support test failures, qualification tests under extreme conditions.'
+                'Testing prototype units, performing final tests, troubleshooting, supporting test failures, and conducting qualification tests under extreme conditions.'
             ]
         },
         {
@@ -46,7 +46,7 @@ const Expirience = () => {
             role: 'Radar Technician',
             years: '2015-2018',
             description: [
-                'Technical support for the high range radars on the warships, installation + Periodic radars inspection on ships and labs.'
+                'Technical support for the high-range radars on warships, including installation and periodic inspections on ships and in labs.'
             ]
         }           // Add more expirience with descriptions as needed
     ];

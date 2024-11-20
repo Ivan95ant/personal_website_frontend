@@ -31,7 +31,7 @@ const WelcomeModal = () => {
             <p>Thanks for visiting. Feel free to explore and learn more about me and my projects!</p>
             <p></p>
             <p>This website was created from scratch</p>
-            <p>(Ract/Express/NodeJS/MongoDB)</p>
+            <p>(React/Express/NodeJS/MongoDB)</p>
 
             <button onClick={closeModal}>Close</button>
         </Modal>

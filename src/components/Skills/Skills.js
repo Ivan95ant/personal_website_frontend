@@ -19,7 +19,7 @@ const Skills = () => {
         'CSS', 
         'MongoDB - database',
         'PostMan - backend debug tool',
-        'Implemantation of exteranl API (Google API..)',
+        'Implementation of external APIs (Google APIs, etc.)',
         'Heroku - backend deployment',
         'Firebase - frontend deployment',
         'Build SPA from scratch E2E'
@@ -40,7 +40,7 @@ const Skills = () => {
       description: [
         'Co-Pilot ',
         'Chat GPT',
-        'Efficantly structuring instructions for AI models',
+        'Efficiently structuring instructions for AI models',
         'Integrate model output into an existing codebase'    ]
     },
     {
@@ -55,14 +55,14 @@ const Skills = () => {
         name: "Data Analysis",
         description: [
           'CSV',
-          'EXCEL', 
+          'Excel', 
           'VBA'
       ]
       },
       {
         name: "Version Control",
         description: [
-          'Azure GIT',
+          'Azure Git',
           'GitHub', 
           'Gerrit'
       ]
@@ -70,7 +70,7 @@ const Skills = () => {
       {
         name: "OS",
         description: [
-          'Windows (advanced)',
+          'Windows',
           'Linux'
       ]
       },
@@ -80,13 +80,13 @@ const Skills = () => {
           'TCP/IP',
           'SSH',
           'FTP/FTPS',
-          'Network fundumentals and theoretical knowladge'
+          'Network fundamentals and theoretical knowledge'
       ]
       },
       {
-        name: "Managment",
+        name: "Management",
         description: [
-          'International team activities management (4 engineers)'
+          'Management of international team activities (4 engineers)'
       ]
       },
     {
@@ -95,8 +95,8 @@ const Skills = () => {
         'Highly motivated',
         'Quick learner', 
         'Good technical and logical skills', 
-        'Independently working ability', 
-        'Pushing tasks', 
+        'Ability to work independently', 
+        'Task-driven', 
         'Organized and responsible.'
     ]
         

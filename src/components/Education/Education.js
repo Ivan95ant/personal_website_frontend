@@ -12,7 +12,7 @@ const Education = () => {
         },
         {
             name: 'Electronics',
-            description: 'Practical Enginieer',
+            description: 'Practical Engineer',
             details: 'Kciney yam Akko 2013-2015'
         },
         {

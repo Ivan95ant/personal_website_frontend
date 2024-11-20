@@ -45,7 +45,7 @@ const Header = () => {
                     Welcome to my portfolio! <br /><br />
                     This Single Page Application (SPA) was built from scratch by me, using MERN technologies (MongoDB, Express, React, NodeJS). <br />
                     The website serves as a platform to showcase my skillset and expertise. <br /><br />
-                    New projects will be added regularly - so stay tuned for updates ;) <br /><br />
+                    New projects will be added regularly — so stay tuned for updates ;) <br /><br />
                     Feel free to explore my projects and get to know more about me.
                 </p>
 
