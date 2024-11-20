@@ -160,7 +160,7 @@
 @media (max-width: 480px) {
     .ReactModal__Content {
         max-width: 75%; /* Allow the modal to fill most of the screen width */
-        max-height: 50%;
+        max-height: 80%;
         padding: 15px; /* Add some side padding for mobile screens */
     }
 }
