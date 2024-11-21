@@ -79,7 +79,7 @@ const Skills = () => {
         description: [
           'TCP/IP',
           'SSH',
-          'FTP/FTPS',
+          'FTP/SFTP',
           'Network fundamentals and theoretical knowledge'
       ]
       },
