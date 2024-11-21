@@ -86,7 +86,7 @@ const Skills = () => {
       {
         name: "Management",
         description: [
-          'Management of international team activities (4 engineers)'
+          'Management of international team activities (Taiwan)'
       ]
       },
     {
