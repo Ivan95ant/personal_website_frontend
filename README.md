@@ -1,3 +1,64 @@
+
+# Frontend for Personal Portfolio Website
+
+This repository contains the frontend for my personal portfolio website built using React.
+
+## Features
+
+- **Home Page**: Includes an introduction, skills, and projects sections.
+- **Dynamic CV Viewer**: Allows downloading, opening, and previewing a CV.
+- **Contact Form**: Users can contact me using a form integrated with the backend.
+- **Distance Calculator**: Uses Google Maps API to calculate distances.
+- **Autocomplete Suggestions**: Fetches address suggestions dynamically.
+
+## Technologies Used
+
+- React
+- Axios
+- FontAwesome for icons
+- CSS Modules for styling
+
+## Setup Instructions
+
+1. Clone the repository:
+   ```bash
+   git clone <frontend-repo-url>
+   cd <frontend-folder>
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Create a `.env` file in the root directory with the following variable:
+   ```env
+   REACT_APP_BACKEND_URL=http://localhost:5001
+   ```
+
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+
+## Folder Structure
+
+- `src/components`: Contains reusable React components.
+- `src/assets`: Static files such as images and icons.
+- `src/pages`: Pages like `HomePage` and other sections.
+
+## Available Scripts
+
+- `npm start`: Runs the app in development mode.
+- `npm build`: Builds the app for production.
+- `npm test`: Runs tests.
+
+## License
+
+This project is licensed under the MIT License.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +129,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
